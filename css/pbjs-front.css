@@ -1,0 +1,131 @@
+html {
+	min-width: 550px;
+	background: #86be40;
+}
+html, body { height: 100%; }
+p {
+	line-height: 24px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+.absolute { position: absolute; }
+.boxshadow {
+	-moz-box-shadow: 0px 0px 5px #868686;
+	-webkit-box-shadow: 0px 0px 5px #868686;
+	-o-box-shadow: 0px 0px 5px #868686;
+	box-shadow: 0px 0px 5px #868686;
+}
+.radius20 {
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.poweredby,
+.forkme {
+	z-index: 2;
+	cursor: pointer;
+	text-indent: -9000px;
+	outline: none;
+}
+
+.poweredby {
+	z-index: 2;
+	top: 50%;
+	width: 45px;
+	height: 203px;
+	margin-top: -302px;
+	background: url('../images/poweredby.jpg') no-repeat center center;
+}
+.forkme {
+	top: 0;
+	right: 0;
+	width: 141px;
+	height: 141px;
+	background: url('../images/forkme.png') no-repeat center center;
+}
+
+.poster {
+	height: 100%;
+	text-align: center;
+}
+
+.poster:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em; /* Adjusts for spacing */
+
+	/* For visualization
+	background: #808080; width: 5px;
+*/
+ }
+
+.centered {
+	z-index: 1;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 516px;
+	line-height: 24px; 
+	padding: 15px;
+
+	background: rgb(85, 85, 85); /* The Fallback */
+	background: rgba(85, 85, 85, 0.1);
+}
+
+.centered .container { background: #ffffff; }
+.centered .container img { margin: 20px; }
+.centered .inner {
+	padding: 35px 40px;
+	background: #e6e6e6;
+}
+
+.button {
+	padding: 12px 30px;
+	border-top: 1px solid #ffffff;
+	border-bottom: 2px solid #cfcfcf;
+	text-decoration: none;
+	font-family: 'verdana';
+	font-size: 10px;
+	font-weight: bold;
+	color: #ffffff;
+	background: #555555;
+}
+.button span {
+	padding-left: 10px;
+	font-size: 7px;
+	font-family: 'arial';
+	outline: none;
+}
+
+.glow {
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 510px;
+	height: 510px;
+	margin-top: -255px;
+	margin-left: -255px;
+	background: rgba(255, 255, 255, 0.4);
+
+	-moz-box-shadow: 0px 0px 355px #ffffff;
+	-webkit-box-shadow: 0px 0px 355px #ffffff;
+	-o-box-shadow: 0px 0px 355px #ffffff;
+	box-shadow: 0px 0px 355px #ffffff;
+/*	box-shadow: 0px 0px 355px red;*/
+
+	-moz-border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-o-border-radius: 300px;
+	border-top-left-radius: 300px;
+	border-top-right-radius: 300px;
+	border-bottom-left-radius: 300px;
+	border-bottom-right-radius: 300px;
+}
