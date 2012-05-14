@@ -1,5 +1,5 @@
 html {
-	min-width: 550px;
+	min-width: 880px;
 	background: #86be40;
 
     -webkit-transform: translate3d(0,0,0);
@@ -78,7 +78,7 @@ p {
 	padding: 15px;
 	font-size: 14px;
 	font-family: 'verdana';
-	background: rgb(85, 85, 85); /* The Fallback */
+	background: rgb(85, 85, 85); /*  The Fallback */
 	background: rgba(85, 85, 85, 0.1);
 }
 
@@ -89,6 +89,7 @@ p {
 	color: transparent;
 	background: #ffffff;
 }
+.centered .inner p { color: #555555; }
 
 .button {
 	padding: 12px 30px;
