@@ -1,19 +1,34 @@
-<!-- !location: /githubsite -->
-
 <!doctype html>
 <html lang="en">
 <head>
 	
 	<!--document-->
 	<meta charset="utf-8">
-	<title>PBJS</title>
+	<title>pbjs - efficient coding</title>
 	<!--/document-->
-	
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta http-equiv="content-type" content="text/html, charset=utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+	<meta name="description" content="This is the Github Page of 'pbjs' - a small and lightweight object orientated framework.">
+    <meta name="author" content="Niek Saarberg, @pluxbox">
+	<link rel="canonical" href="http://pbjs.github.com/" />
+
+	<meta property="og:title" content="pbjs - efficient coding" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://pbjs.github.com/" />
+	<meta property="og:description" content="This is the Github Page of 'pbjs' - a small and lightweight object orientated framework." />
+
 	<!--css-->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/pbjs-front.css">
 	<!--/css-->
 	
+	<!--/js-->
+	<script src="scripts/pbjs/bin/pbjs.js"></script>
+	<!--/js-->
+
 </head>
 <!--[if lt IE 7]>  <body class="ie ie6 lte9 lte8 lte7"> <![endif]-->
 <!--[if IE 7]>     <body class="ie ie7 lte9 lte8 lte7"> <![endif]-->
@@ -33,40 +48,25 @@
 			<!-- container -->
 			<div class="boxshadow container">
 				
-				<img src="images/pbjs-logo.png" alt="PBJS" title="PBJS" />
+				<img src="images/pbjs-logo.png" alt="pbjs" title="pbjs" />
 
 				<!-- inner -->
-				<div class="inner">
-					<p>
-						
-						As a JavaScript developer you know how exhausting it is to deal with DOM manipulation,<br />
-						different browser versions, multiple devices and random code syntax.
+				<div class="inner" id="inner">
+
+					<p>						
+						As a JavaScript developer its exhausting to deal with different browser, multiple devices and random code syntax.
 					</p>
+
+					<p>						
+						People are becoming interested in creating large web applications -
+						so we needed a solution which offers a polished, fast &amp; maintainable structure.
+					</p>					
+					
 					<p>
-						There was no standard to deal with these issues before -
-						until a few years ago when frameworks<br />
-						like jQuery or Prototype appeared.
-						
-						We gladly payed the price by loading these large libraries,<br />
-						as they helped us to easily create dynamic web pages. 
+						This framework inherits common features (~ CSS selector), while it kept its small filesize of 10kb
+						and support for best practices in front-end development.
 					</p>
-					<p>
-						Nowadays we depend on these - even though they becoming bloated or got outdated.
-					</p>
-					<p>
-						Since more people get interested in creating large web applications,<br />
-						we needed a solution which offers a polished, fast &amp; maintable structure.
-					</p>
-					<p>
-						The Users experience should be considered as well - regarding smooth animations and fast rendering on all devices.
-					</p>
-					<p>
-						This framework inherits most of the common features, while it kept the small size<br />
-						and supports best practice in front-end development.
-					</p>
-					<p>
-						Let's take a bite from pbjs - code efficient. &nbsp;
-					</p>
+
 					<p style="clear:both; margin-bottom: 30px;"></p>
 					<a class="button radius20" href="https://github.com/Saartje87/pbjs">
 						discover more
@@ -88,6 +88,23 @@
 
 	</div>
 	<!-- /poster -->
+
+	<!-- inline scrip  -->
+	<script>
+
+		var inner = PB('inner');
+
+		PB(window).on('load', function() {
+					
+					inner.morph({ background: '#e6e6e6' }, 0.5, function() {
+
+						inner.morph({ color: '#000' }, 0.7);
+						
+					} );
+
+		}, 500 );		
+
+	</script>
 	
 </body>
 </html>

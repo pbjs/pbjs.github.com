@@ -1,6 +1,9 @@
 html {
 	min-width: 550px;
 	background: #86be40;
+
+    -webkit-transform: translate3d(0,0,0);
+       -moz-transform: translate3d(0,0,0);
 }
 html, body { height: 100%; }
 p {
@@ -70,7 +73,7 @@ p {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	width: 816px;
+	width: 516px;
 	line-height: 24px; 
 	padding: 15px;
 	font-size: 14px;
@@ -83,7 +86,8 @@ p {
 .centered .container img { margin: 20px; }
 .centered .inner {
 	padding: 35px 40px;
-	background: #e6e6e6;
+	color: transparent;
+	background: #ffffff;
 }
 
 .button {
