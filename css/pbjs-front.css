@@ -86,8 +86,8 @@ p {
 .centered .container img { margin: 20px; }
 .centered .inner {
 	padding: 35px 40px;
-	color: transparent;
-	background: #ffffff;
+	color: #e6e6e6;
+	background: #e6e6e6;
 }
 /*.centered .inner p { color: #555555; }*/
 

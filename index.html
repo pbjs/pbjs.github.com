@@ -83,19 +83,27 @@
 
 	<!-- inline scrip  -->
 	<script>
+	
+	setTimeout(function () {
+		
+		// Animate color to #000
+		PB('inner').morph({
+			
+			color: '#000'
+		});
+	}, 500);
 
-		var inner = PB('inner');
+	</script>
+	
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 
-		PB(window).on('load', function() {
-					
-					inner.morph({ background: '#e6e6e6' }, 0.5, function() {
+	window.onload = function () {
 
-						inner.morph({ color: '#000' }, 0.7);
-						
-					} );
-
-		}, 500 );		
-
+		var pageTracker = _gat._getTracker("UA-357952-2");
+		pageTracker._trackPageview();
+	} 
 	</script>
 	
 </body>
