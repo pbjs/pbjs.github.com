@@ -1,5 +1,5 @@
 html {
-	min-width: 550px;
+	min-width: 880px;
 	background: #86be40;
 }
 html, body { height: 100%; }
@@ -71,7 +71,8 @@ p {
 	display: inline-block;
 	vertical-align: middle;
 	width: 816px;
-	line-height: 24px; 
+	line-height: 24px;
+	margin: 10px;
 	padding: 15px;
 	font-size: 14px;
 	font-family: 'verdana';
