@@ -1,0 +1,3 @@
+[submodule "scripts/pbjs"]
+	path = scripts/pbjs
+	url = git://github.com/Saartje87/pbjs.git
