@@ -57,7 +57,7 @@
 					
 					<p>People are becoming interested in creating large and high performance web applications - so we needed a solution which offers a polished, fast &amp; easily maintainable structure.</p>
 					
-					<p>This framework inherits common features (~ CSS selector, DOM manipulation, Request and more), but it retained its small size (~10kb) and forces/supports best practice in front-end development.</p>
+					<p>This framework inherits common features (CSS selector, DOM manipulation, Request and more), but it retained its small size (<i>~10kb</i>) and forces/supports best practice in front-end development.</p>
 
 					<p style="clear:both; margin-bottom: 30px;"></p>
 					<a class="button radius20" href="https://github.com/Saartje87/pbjs">
@@ -102,14 +102,17 @@
 	</script>
 	
 	<script type="text/javascript">
-	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 
-	window.onload = function () {
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-31724729-1']);
+	_gaq.push(['_trackPageview']);
 
-		var pageTracker = _gat._getTracker("UA-357952-2");
-		pageTracker._trackPageview();
-	} 
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
 	</script>
 	
 </body>
