@@ -1,3 +1,6 @@
 [submodule "scripts/pbjs"]
 	path = scripts/pbjs
 	url = git://github.com/Saartje87/pbjs.git
+[submodule "scripts/pbjs-0.6"]
+	path = scripts/pbjs-0.6
+	url = https://github.com/Saartje87/pbjs-0.6.git
