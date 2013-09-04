@@ -43,7 +43,7 @@
 	<div class="poster">
 
 		<!-- centered -->
-	    <div class="centered radius20">
+	    <div id="container" class="centered radius20" style="height: 359px; overflow: hidden; -webkit-transform: rotate(15deg); -moz-transform: rotate(15deg);">
 
 			<!-- container -->
 			<div class="boxshadow container">
@@ -83,18 +83,31 @@
 
 	<!-- inline script  -->
 	<script>
+
+	PB.$(window).on('load', function ( e ) {
+
+		PB.$('#container').transition({
+
+			height: 732,
+			transform: 'rotate(0deg)'
+		}, .9, function () {
+
+			// Animate color to #000
+			PB.$('#inner').transition({
+
+				color: '#000'
+			}, .7);
+
+			PB.$('a.button').transition({
+
+				opacity: 1
+			}, 1.8);
+		});
+	});
+
 	setTimeout(function () {
 		
-		// Animate color to #000
-		PB.$('#inner').transition({
-
-			color: '#000'
-		}, .7);
-
-		PB.$('a.button').transition({
-
-			opacity: 1
-		}, .7);
+		
 	}, 1000);
 	</script>
 	
