@@ -26,7 +26,7 @@
 	<!--/css-->
 	
 	<!--/js-->
-	<script src="scripts/pbjs/bin/pbjs.js"></script>
+	<script src="scripts/pbjs/bin/pbjs-0.6.js"></script>
 	<!--/js-->
 
 </head>
@@ -83,22 +83,19 @@
 
 	<!-- inline script  -->
 	<script>
-	
 	setTimeout(function () {
 		
 		// Animate color to #000
-		PB('inner').morph({
-			
+		PB.$('#inner').transition({
+
 			color: '#000'
 		}, .7);
-		
-		// Animate button('s) opacity
-		PB(document).find('a.button').invoke('morph', {
-			
+
+		PB.$('a.button').transition({
+
 			opacity: 1
 		}, .7);
-	}, 500);
-
+	}, 1000);
 	</script>
 	
 	<script type="text/javascript">
