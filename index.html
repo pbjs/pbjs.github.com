@@ -55,9 +55,9 @@
 					
 					<p>As a JavaScript developer it’s exhausting to deal with different browsers multiple devices and random code syntax.</p>
 					
-					<p>People are becoming interested in creating large web applications - so we needed a solution which offers a polished, fast &amp; easily maintainable structure.</p>
+					<p>People are becoming interested in creating large and high performance web applications - so we needed a solution which offers a polished, fast &amp; easily maintainable structure.</p>
 					
-					<p>This framework inherits common features (~ CSS selector, DOM manipulation, Request and more), but it retained its small size and supports the best practice in front-end development.</p>
+					<p>This framework inherits common features (CSS selector, DOM manipulation, Request and more), but it retained its small size (<i>~10kb</i>) and forces/supports best practice in front-end development.</p>
 
 					<p style="clear:both; margin-bottom: 30px;"></p>
 					<a class="button radius20" href="https://github.com/Saartje87/pbjs-0.6">
@@ -81,20 +81,37 @@
 	</div>
 	<!-- /poster -->
 
-	<!-- inline scrip  -->
+	<!-- inline script  -->
 	<script>
+	
+	setTimeout(function () {
+		
+		// Animate color to #000
+		PB('inner').morph({
+			
+			color: '#000'
+		}, .7);
+		
+		// Animate button('s) opacity
+		PB(document).find('a.button').invoke('morph', {
+			
+			opacity: 1
+		}, .7);
+	}, 500);
 
-		var inner = PB('inner');
+	</script>
+	
+	<script type="text/javascript">
 
-		PB(window).on('load', function() {
-					
-					inner.morph({ background: '#e6e6e6' }, 0.5, function() {
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-31724729-1']);
+	_gaq.push(['_trackPageview']);
 
-						inner.morph({ color: '#000' }, 0.7);
-						
-					} );
-
-		}, 500 );		
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
 
 	</script>
 	
